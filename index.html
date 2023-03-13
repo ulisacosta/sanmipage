@@ -1,48 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Miguel</title>
-    <link rel="shortcut icon" href="/img//logoSinLetrasXXL.png" type="image/x-icon" >
+    <title>San Miguel asesores y productores de seguros</title>
+    <link rel="shortcut icon" href="/img//logoSinLetrasXXL.png" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobreNosotros">Sobre nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    
+
+
+    <nav>
+        <ul>
+            <li class="navLink">
+                <a href="#inicio">
+                    <button class="navButton">
+                        <span> INICIO</span>
+                    </button>
+                </a>
+            </li>
+
+
+            <li class="navLink">
+                <a href="#sobreNosotros">
+                    <button class="navButton">
+                        <span> SOBRE NOSOTROS</span>
+                    </button>
+                </a>
+            </li>
+
+            <li class="navLink">
+                <a href="#compañias">
+                    <button class="navButton">
+                        <span> COMPAÑIAS</span>
+                    </button>
+                </a>
+            </li>
+
+            <li class="navLink">
+                <a href="#contacto">
+                    <button class="navButton">
+                        <span> CONTACTO</span>
+                    </button>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
 
     <header id="inicio">
         <!-- Imagen de la mitad de la pagina del lado izquierdo -->
         <div>
-            <img src="img/logoSinFOndo.png" alt="">
+            <img src="img/logoSinFondo.png" alt="">
         </div>
+
         <!-- Frase para dar info al negocio -->
         <div>
             <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veniam accusantium aliquam, quam quos quis,
+                culpa maiores, qui consequuntur error adipisci! Commodi tempora rem, quia quis sed ex ullam pariatur.
 
             </p>
         </div>
     </header>
 
     <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <div id="sobreNosotros">
-
-    </div>
+    <section>
+        <div id="sobreNosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus earum, deleniti sapiente
+                tenetur perspiciatis quos numquam amet corporis necessitatibus sed placeat harum quae fugiat hic qui
+                tempore, sunt beatae?
+            </p>
+        </div>
+    </section>
 
     <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <div id="contacto">
+    <section>
+        <div id="compañias">
+            <h2>COMPAÑIAS</h2>
+            <h3>Trabajamos con estas compañias</h3>
+            <img src="/img/LogoRivadavia.png" alt="">
+            <img src="/img/logoBoston.png" alt="">
+            <img src="/img/logoSMG.png" alt="">
+            <img src="/img/logoExperta.png" alt="">
+            <img src="/img/logoMapfre.png" alt="">
+            <img src="/img/logoLPS.png" alt="">
+        </div>
+    </section>
 
-    </div>
+    <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
+    <section>
+        <div id="contacto">
+            <div id="whatsapp">
+                <img src="/img/whatsapp.png" alt="">
+                <p><a href="">numero oficina</a></p>
+            </div>
 
+            <div class="email">
+                <img src="/img/gmail.png" alt="">
+            </div>
+
+            <div class="direccion">
+                <img src="/img/direccion.png" alt="">
+                <p>Eva Duarte de Peron 629</p>
+            </div>
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
+
 </html>
