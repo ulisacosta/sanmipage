@@ -13,7 +13,7 @@
 
 <body>
 
-
+    <header id="header">
     <nav>
         <ul>
             <li class="navLink">
@@ -51,39 +51,44 @@
 
         </ul>
     </nav>
+</header>
 
-
-    <header id="inicio">
-        <!-- Imagen de la mitad de la pagina del lado izquierdo -->
-        <div>
-            <img src="img/logoSinFondo.png" alt="">
+    
+<main class="main">        
+    <section class="sectionInicio" id="inicio">    
+    <!-- Imagen de la mitad de la pagina del lado izquierdo -->
+        <div class="imgLogo">
+            <img src="img/logoSinFondo.png" alt="" >
         </div>
 
         <!-- Frase para dar info al negocio -->
-        <div>
+        <div class="fraseInicio">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veniam accusantium aliquam, quam quos quis,
                 culpa maiores, qui consequuntur error adipisci! Commodi tempora rem, quia quis sed ex ullam pariatur.
 
             </p>
         </div>
-    </header>
+    </section>
 
+    
     <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <section>
-        <div id="sobreNosotros">
+    <section class="sectionSobreNosotros" id="sobreNosotros">
+        <div >
+        <div  >
             <h2>Sobre nosotros</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam temporibus earum, deleniti sapiente
                 tenetur perspiciatis quos numquam amet corporis necessitatibus sed placeat harum quae fugiat hic qui
-                tempore, sunt beatae?
+                tempore, sunt beataea?
             </p>
         </div>
+    </div>
     </section>
 
     <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <section>
-        <div id="compañias">
+    <section class="sectionCompañias" id="compañias">
+        <div >
             <h2>COMPAÑIAS</h2>
             <h3>Trabajamos con estas compañias</h3>
             <img src="/img/LogoRivadavia.png" alt="">
@@ -96,8 +101,8 @@
     </section>
 
     <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <section>
-        <div id="contacto">
+    <section class="sectionContacto" id="contacto">
+        <div >
             <div id="whatsapp">
                 <img src="/img/whatsapp.png" alt="">
                 <p><a href="">numero oficina</a></p>
@@ -113,6 +118,8 @@
             </div>
         </div>
     </section>
+</main>
+
     <script src="index.js"></script>
 </body>
 
