@@ -86,9 +86,12 @@ ul li{
 .sectionCompanias,
 .sectionContacto{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    border-bottom: 1px solid;
 }
+
 
 
 .imgCompanias{
@@ -96,8 +99,10 @@ ul li{
     grid-template-columns: repeat(3,250px);
     grid-template-rows: repeat(2,200px);
     gap: 50px;
+   
     align-items: center;
 }
+
 
 .logoRivadavia,
 .logoBoston,
@@ -150,14 +155,10 @@ ul li{
     font-size:30px;
 }
 
-.divTitleCompanias{
-
-}
-
 .fraseSobreNosotros{
-    margin-top: 15px;
+ 
  width: 800px;
- justify-self: center;
+
 }
 
 
