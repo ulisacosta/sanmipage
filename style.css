@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 body{
@@ -182,30 +183,30 @@ ul li{
     border-radius: 100px;
 }
 
-
+.whatsapp:hover,
+.direccion:hover,
+.email:hover{
+    transition:all 0.5s ;
+    padding: 10px;
+}
 
 .whatsapp:hover{
    
-    transition:all 0.5s ;
+   
     background-color: rgb(32, 128, 32);
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
+
 }
 
 .email:hover{
-   
-    transition:all 0.5s ;
-    background-color: #7f86c4;
+    background-color: #3546dd;
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
+
 }
 
 .direccion:hover{
-   
-    transition:all 0.5s ;
-    background-color: rgb(248, 171, 171);
+    background-color: rgb(185, 31, 31);
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
 }
 
 .whatsapp:not(:hover),
@@ -214,3 +215,25 @@ ul li{
     transition: 0.5s;
 }
 
+.whatsapp a,
+.direccion a{
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+
+
+.email span{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(238, 234, 230);
+}
+
+.email:hover span {
+    opacity: 1;
+
+}
