@@ -181,3 +181,36 @@ ul li{
     margin: 10px;
     border-radius: 100px;
 }
+
+
+
+.whatsapp:hover{
+   
+    transition:all 0.5s ;
+    background-color: rgb(32, 128, 32);
+    box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.email:hover{
+   
+    transition:all 0.5s ;
+    background-color: #7f86c4;
+    box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.direccion:hover{
+   
+    transition:all 0.5s ;
+    background-color: rgb(248, 171, 171);
+    box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.whatsapp:not(:hover),
+.email:not(:hover),
+.direccion:not(:hover){
+    transition: 0.5s;
+}
+
