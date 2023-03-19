@@ -3,6 +3,7 @@
 :root {
     --varHeightNav: 60px;
     --varColorNav: #669bbc;
+    --varFont:  'Roboto', sans-serif;
 }
 
 
@@ -20,23 +21,20 @@ nav{
     width: 100%;
     height: var(--varHeightNav);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     position: fixed; 
-    
 }
 
 ul{
-    display: grid;
-    grid-template-columns: repeat(4,200px);
-   gap: 60px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    
+}   
 
 ul li{
     list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
 
@@ -62,7 +60,9 @@ ul li{
 } 
 
 .navLink span{
-    font-size:15px ;
+    font-size:17px ;
+    font-family: var(--varFont);
+
 }
 
 .sectionInicio,
@@ -78,7 +78,9 @@ ul li{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     border-bottom: 1px solid;
+    background-color: #fff;
 }
+
 
 
 .imgLogo,.fraseInicio{
@@ -87,20 +89,41 @@ ul li{
   align-items: center;
 }
 
+.fraseInicio p{
+    font-size: 30px;
+    width: 600px;
+    font-family: var(--varFont);
+}
+
+.imgLogo:hover,
+.fraseInicio:hover{
+    transition: 1s;
+    background-color: var(--varColorNav);
+}
+
+.imgLogo:hover .imgContainer{
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.fraseInicio:hover p{
+    color: #fff;
+}
+
 .imgContainer {
-    transform: skew(-11deg);
+ /*    transform: skew(-11deg); */
 }
 
 .logo{
-    width:600px ;
+    width:550px ;
 }
 
 .imgLogo{
-    z-index: -1;
-    position: relative;
-    transform: skew(11.3deg);
-    transform-origin: bottom right;
-    background-color:#f9f7f3;
+ /*    
+    position: relative; */
+/*     transform: skew(11.3deg); */
+ /*    transform-origin: bottom right; */
+    
 }
  
 
@@ -178,7 +201,7 @@ ul li{
 }
 
 .fraseSobreNosotros{
- 
+ font-family:var(--varFont);
  width: 800px;
 
 }
@@ -251,7 +274,7 @@ ul li{
 .email span{
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    font-family: 'Roboto', sans-serif;
+    font-family:var(--varFont);
     color: rgb(238, 234, 230);
 }
 
