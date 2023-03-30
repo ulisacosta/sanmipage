@@ -111,23 +111,22 @@ ul li {
     color: #fff;
 }
 
-.imgContainer {
-    /*    transform: skew(-11deg); */
-}
+/* .imgContainer {
+       transform: skew(-11deg);
+} */
 
 .logo {
     width: 550px;
 }
 
-.imgLogo {
-    /*    
-    position: relative; */
-    /*     transform: skew(11.3deg); */
-    /*    transform-origin: bottom right; */
+/* .imgLogo {
 
+    position: relative;
+      transform: skew(11.3deg); 
+       transform-origin: bottom right; 
 }
 
-
+ */
 .sectionCompanias {
     display: flex;
     flex-direction: column;
