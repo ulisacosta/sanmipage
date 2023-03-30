@@ -3,52 +3,50 @@
 :root {
     --varHeightNav: 60px; 
     --varColorNav: #9cbed3;
-    --varFont:  'Roboto', sans-serif;
+    --varFont: 'Roboto', sans-serif;
 }
 
 
-body{
+body {
     margin: 0;
     padding: 0;
-   
+
 }
 
 
 
 nav{
-     z-index: 1; 
+    z-index: 1;
      background-color: var(--varColorNav);
-    width: 100vw;
-    position: fixed;
-    top: 0; 
+    width: 100%;
     height: var(--varHeightNav);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    position: fixed; 
 }
 
-ul{
+ul {
     display: flex;
     flex-wrap: wrap;
-    
-}   
 
-ul li{
+}
+
+ul li {
     list-style: none;
-    
+
 }
 
 
-.navButton{
+.navButton {
     background-color: var(--varColorNav);
     width: 200px;
     height: var(--varHeightNav);
     border: none;
 }
 
-.navButton:hover{
+.navButton:hover {
     transition: background-color 0.5s;
     background-color: #003049;
     color: wheat;
@@ -56,13 +54,13 @@ ul li{
 
 
 
-.navImg{
+.navImg {
     width: 70px;
     height: var(--varHeightNav);
-} 
+}
 
-.navLink span{
-    font-size:17px ;
+.navLink span {
+    font-size: 17px;
     font-family: var(--varFont);
 
 }
@@ -71,82 +69,83 @@ ul li{
 .sectionSobreNosotros,
 .sectionCompanias,
 .sectionContacto{
-/*     padding-top: var(--varHeightNav); */
+    padding-top: var(--varHeightNav);
     height:100vh;
     width: 100%;
 }
 
-.sectionInicio{   
+.sectionInicio {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid;
     background-color: #fff;
 }
 
 
 
-.imgLogo,.fraseInicio{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.imgLogo,
+.fraseInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fraseInicio p{
+.fraseInicio p {
     font-size: 30px;
     width: 600px;
     font-family: var(--varFont);
 }
 
 .imgLogo:hover,
-.fraseInicio:hover{
+.fraseInicio:hover {
     transition: 1s;
     background-color: var(--varColorNav);
 }
 
-.imgLogo:hover .imgContainer{
+.imgLogo:hover .imgContainer {
     border-radius: 50%;
     background-color: #fff;
 }
 
-.fraseInicio:hover p{
+.fraseInicio:hover p {
     color: #fff;
 }
 
 .imgContainer {
- /*    transform: skew(-11deg); */
+    /*    transform: skew(-11deg); */
 }
 
-.logo{
-    width:550px ;
+.logo {
+    width: 550px;
 }
 
-.imgLogo{
- /*    
+.imgLogo {
+    /*    
     position: relative; */
-/*     transform: skew(11.3deg); */
- /*    transform-origin: bottom right; */
-    
-}
- 
+    /*     transform: skew(11.3deg); */
+    /*    transform-origin: bottom right; */
 
-.sectionCompanias{
+}
+
+
+.sectionCompanias {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     border-bottom: 1px solid;
 }
 
-.divTitleCompanias{
+.divTitleCompanias {
     margin-bottom: 50px;
 }
 
-.imgCompanias{
+.imgCompanias {
     display: grid;
-    grid-template-columns: repeat(3,250px);
-    grid-template-rows: repeat(2,200px);
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 200px);
     gap: 50px;
-   
+
     align-items: center;
 }
 
@@ -156,9 +155,9 @@ ul li{
 .logoExperta,
 .logoLPS,
 .logoSMG,
-.logoMapfre{
-    justify-self:center;
-   
+.logoMapfre {
+    justify-self: center;
+
 }
 
 /* IMAGENES DE LAS COMPAÑIAS */
@@ -188,28 +187,28 @@ ul li{
  */
 
 /* SECCION SOBRE NOSOTROS */
-.sectionSobreNosotros{
+.sectionSobreNosotros {
     display: grid;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     border-bottom: 1px solid;
 }
 
-.titleSobreNosotros{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:30px;
+.titleSobreNosotros {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
 }
 
-.fraseSobreNosotros{
- font-family:var(--varFont);
- width: 800px;
+.fraseSobreNosotros {
+    font-family: var(--varFont);
+    width: 800px;
 
 }
 
 
-.sectionContacto{
+.sectionContacto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +217,7 @@ ul li{
 
 .whatsapp,
 .email,
-.direccion{
+.direccion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,55 +231,84 @@ ul li{
 
 .whatsapp:hover,
 .direccion:hover,
-.email:hover{
-    transition:all 0.5s ;
+.email:hover {
+    transition: all 0.5s;
     padding: 10px;
 }
 
-.whatsapp:hover{
-   
-   
+.whatsapp:hover {
+
+
     background-color: rgb(32, 128, 32);
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.email:hover{
+.email:hover {
     background-color: #3546dd;
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.direccion:hover{
+.direccion:hover {
     background-color: rgb(185, 31, 31);
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .whatsapp:not(:hover),
 .email:not(:hover),
-.direccion:not(:hover){
+.direccion:not(:hover) {
     transition: 0.5s;
 }
 
 .whatsapp a,
-.direccion a{
+.direccion a {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 100%;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     flex-direction: column;
 }
 
 
-.email span{
+.email span {
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    font-family:var(--varFont);
+    font-family: var(--varFont);
     color: rgb(238, 234, 230);
 }
 
 .email:hover span {
     opacity: 1;
 
+}
+
+
+@media screen and (max-width: 1159px) {
+    nav {
+        width: 100vw;
+    }
+
+    .sectionInicio,
+    .sectionSobreNosotros,
+    .sectionCompanias,
+    .sectionContacto {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .whatsapp,
+    .email,
+    .direccion {
+        border-radius: 50px;
+        width: 200px;
+        height: 200px;
+    }
+
+   
 }
