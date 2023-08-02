@@ -141,13 +141,18 @@ ul li {
 
 .imgCompanias {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(2, 200px);
-    gap: 50px;
-
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(2, 200px); */
+    gap: 70px;
+    
     align-items: center;
 }
 
+
+.divLogoImg{
+    width: 250px;
+    height: 250px;
+}
 
 .logoRivadavia,
 .logoBoston,
@@ -155,8 +160,12 @@ ul li {
 .logoLPS,
 .logoSMG,
 .logoMapfre {
+    width: 200px;
+    height: 200px;
+    padding: 55px;
     justify-self: center;
-
+    border:1px solid ;
+    border-radius: 15px;
 }
 
 /* IMAGENES DE LAS COMPAÑIAS */
@@ -200,6 +209,10 @@ ul li {
 
 }
 
+.fraseSobreNosotros span {
+    font-weight: bolder;
+}
+
 
 .sectionContacto {
     display: flex;
@@ -230,8 +243,6 @@ ul li {
 }
 
 .whatsapp:hover {
-
-
     background-color: rgb(32, 128, 32);
     box-shadow: 0 4px 15px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
