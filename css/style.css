@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-
+  
 }
 
 
@@ -27,13 +27,13 @@ nav {
     position: fixed;
 }
 
-ul {
+.ulNav {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-ul li {
+.ulNav li {
     list-style: none;
 
 }
@@ -127,26 +127,23 @@ ul li {
 }
 
  */
-.sectionCompanias {
+/* .sectionCompanias {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid;
-}
+} */
 
-.divTitleCompanias {
-    margin-bottom: 50px;
-}
 
-.imgCompanias {
+/* .imgCompanias {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: repeat(2, 200px); */
+     grid-template-rows: repeat(2, 200px); 
     gap: 70px;
     
     align-items: center;
-}
+} */
 
 
 .divLogoImg{
@@ -154,39 +151,6 @@ ul li {
     height: 250px;
 }
 
-.logoRivadavia,
-.logoBoston,
-.logoExperta,
-.logoLPS,
-.logoSMG,
-.logoMapfre {
-    width: 200px;
-    height: 200px;
-    padding: 55px;
-    justify-self: center;
-    border:1px solid ;
-    border-radius: 15px;
-}
-
-/* IMAGENES DE LAS COMPAÑIAS */
-/*  .logoRivadavia{
-   
-}
-.logoBoston{
-}
-.logoSMG{
-  
-}
-.logoExperta{
-  
-}
-.logoMapfre{
-  
-} 
-.logoLPS{
-   
-}
- */
 
 /* SECCION SOBRE NOSOTROS */
 .sectionSobreNosotros {

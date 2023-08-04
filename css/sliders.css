@@ -1,11 +1,68 @@
-.splide__slide {
+.div_splide{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
+
+.splide_companias{
+    width: 75%;
+
+ }
+
+ .divTitleCompanias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 .splide__slide img {
     width: 100%;
     height: auto;
   }
 
+
+  .logoRivadavia,
+  .logoBoston,
+  .logoExperta,
+  .logoLPS,
+  .logoSMG,
+  .logoMapfre {
+
+      width: 150px;
+      height: auto;
+      gap: 5px;
+      justify-self: center;
+
+    
+  }
+  ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* IMAGENES DE LAS COMPAÑIAS */
+  /*  .logoRivadavia{
+     
+  }
+  .logoBoston{
+  }
+  .logoSMG{
+    
+  }
+  .logoExperta{
+    
+  }
+  .logoMapfre{
+    
+  } 
+  .logoLPS{
+     
+  }
+   */
 
