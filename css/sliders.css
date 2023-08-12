@@ -6,13 +6,14 @@
     flex-direction: column;
     margin-bottom: 50px;
     gap: 50px;
-    
+    border-bottom: 1px solid;
 }
 
 .splide_companias{
-  
+  background-color: #fff;
     width: 65%;
 border: 1px solid;
+border-radius: 15px;
  }
 
 .sectionCompanias a{
