@@ -1,16 +1,32 @@
-.div_splide{
-    width: 100%;
+.sectionCompanias{
+ 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+    gap: 50px;
+    
 }
 
 .splide_companias{
-    width: 75%;
-
+  
+    width: 65%;
+border: 1px solid;
  }
+
+.sectionCompanias a{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+
+
 
  .divTitleCompanias {
     display: flex;

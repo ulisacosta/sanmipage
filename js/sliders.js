@@ -10,17 +10,21 @@ const splide = document.querySelector(".splide");
 new Splide("#image-carousel", {
   type    : 'loop',
   autoplay: 'play',
-  perPage : 1,
-  gap:5,
+/*   perPage: 6,
+perMove:1, */ 
+  gap:20,
   arrows: false,
   autoHeight: true,
   autoWidth: true,
-  autoplay: true,
   pauseOnHover: true,
-  pagination: false,
+  pagination: true,
   rewind: true,
-  speed:1500,
- interval:1000
+  speed:105000,
+  interval:1500,
+  lazyLoad:'nearby',
+ autoScroll: {
+    speed: 5,
+  },
 }).mount();
 
 /* splideCompañias.mount( ) */
