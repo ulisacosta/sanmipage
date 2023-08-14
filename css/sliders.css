@@ -1,12 +1,19 @@
+:root {
+  --varHeightNav: 60px;
+  --varColorNav: #9cbed3;
+  --varFont: 'Roboto', sans-serif;
+}
+
 .sectionCompanias{
- 
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
     gap: 50px;
-    border-bottom: 1px solid;
+ 
+    padding-top: var(--varHeightNav);
 }
 
 .splide_companias{
@@ -14,6 +21,7 @@
     width: 65%;
 border: 1px solid;
 border-radius: 15px;
+margin-bottom: 100px;
  }
 
 .sectionCompanias a{

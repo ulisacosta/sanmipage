@@ -1,13 +1,5 @@
-const splide = document.querySelector(".splide");
 
-/* const splideCompañias = new Splide(splide, {
-    type   : 'loop',
-    drag   : 'free',
-    focus  : 'center',
-   
-}); */
-
-new Splide("#image-carousel", {
+const splideCompañias = new Splide("#image-carousel", {
   type    : 'loop',
   autoplay: 'play',
 /*   perPage: 6,
@@ -27,4 +19,3 @@ perMove:1, */
   },
 }).mount();
 
-/* splideCompañias.mount( ) */

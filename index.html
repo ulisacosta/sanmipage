@@ -1,230 +1,321 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Miguel asesores y productores de seguros</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>San Miguel asesores y productores de seguros</title>
+    <link rel="shortcut icon" href="img/logowhite.png" type="image/x-icon" />
 
-  <link rel="shortcut icon"
-    href="img/logowhite.png"
-    type="image/x-icon" />
-
-  <!-- SLIDERS -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
-  <script src="
+    <!-- SLIDERS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
 "></script>
-  <!--  -->
+    <!--  -->
 
-  <!-- CSS GENERAL-->
-  <link rel="stylesheet" href="./css/style.css" />
-  <!--  -->
+    <!-- CSS GENERAL-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--  -->
 
-  <!-- CSS SLIDERS -->
-  <link rel="stylesheet" href="./css/sliders.css" />
-  <script src="
+    <!-- CSS SLIDERS -->
+    <link rel="stylesheet" href="./css/sliders.css" />
+    <script src="
   https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
   "></script>
-  <!--  -->
+    <!--  -->
 
-  <!-- ANIMATE.JS  --->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- --->
+    <!-- ANIMATE.JS  --->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- --->
 
+    <!-- AOS SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--  -->
+  </head>
 
-</head>
-
-<body>
-  <header id="header">
-    <nav>
-      <a href="#sectionInicio" id="imgInicio" class="linkImgLogo">
-        <img
-          src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091555/imgPageSanmi/logo/xrisy66t1m1ld10tpj3e.png"
-          alt="logo" width="70px" height="60px" class="navImg" />
-      </a>
-      <ul class="ulNav">
-        <li class="navLink">
-          <a href="#sectionInicio" id="inicio">
-            <button class="navButton">
-              <span> INICIO</span>
-            </button>
-          </a>
-        </li>
-
-        <li class="navLink">
-          <a href="#sectionSobreNosotros">
-            <button class="navButton">
-              <span> SOBRE NOSOTROS</span>
-            </button>
-          </a>
-        </li>
-
-        <li class="navLink">
-          <a href="#sectionCompanias">
-            <button class="navButton" id="companias">
-              <span> COMPAÑIAS</span>
-            </button>
-          </a>
-        </li>
-
-        <li class="navLink">
-          <a href="#sectionContacto">
-            <button class="navButton" id="contacto">
-              <span> CONTACTO</span>
-            </button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section class="sectionInicio animate__animated animate__fadeInLeft" id="sectionInicio">
-      <!-- Imagen de la mitad de la pagina del lado izquierdo -->
-      <div class="imgLogo">
-        <div class="imgContainer">
+  <body>
+    <header id="header">
+      <nav>
+        <a href="#sectionInicio" id="imgInicio" class="linkImgLogo">
           <img
-            src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091555/imgPageSanmi/logo/kteut7dg2stqoedse9kp.png"
-            alt="Logo San Miguel" class="logo" />
-        </div>
-      </div>
+            src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091555/imgPageSanmi/logo/xrisy66t1m1ld10tpj3e.png"
+            alt="logo"
+            width="70px"
+            height="60px"
+            class="navImg"
+          />
+        </a>
+        <ul class="ulNav">
+          <li class="navLink">
+            <a href="#sectionInicio" id="inicio">
+              <button class="navButton">
+                <span> INICIO</span>
+              </button>
+            </a>
+          </li>
 
-      <!-- Frase para dar info al negocio -->
-      <div class="fraseInicio">
-        <p class="">
+          <li class="navLink">
+            <a href="#sectionSobreNosotros">
+              <button class="navButton">
+                <span> SOBRE NOSOTROS</span>
+              </button>
+            </a>
+          </li>
 
-          Protegemos lo que tanto te costo tener, porque tu tranquilidad es nuestra prioridad constante.
-        </p>
-      </div>
-    </section>
+          <li class="navLink">
+            <a href="#sectionCompanias">
+              <button class="navButton" id="companias">
+                <span> COMPAÑIAS</span>
+              </button>
+            </a>
+          </li>
 
-    <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <section class="sectionSobreNosotros" id="sectionSobreNosotros">
-      <div class="divSobreNosotros">
-        <h2 class="titleSobreNosotros">SOBRE NOSOTROS</h2>
-        <p class="fraseSobreNosotros">
-          En nuestra Asesoría encontrarás la satisfacción de que cómo clientes
-          sos la prioridad. Es por eso que te ofrecemos servicios de excelente
-          calidad, conocimiento en lo que adquieras y amabilidad en su Staff
-          de Asesores, altamente capacitados y titulados, que te acompañarán
-          en todo momento a elegir el producto más adecuado según tus
-          necesidades y/o metas a alcanzar, teniendo en cuenta, tu estilo,
-          profesión, y tus bienes <span> que tanto te costo tener.</span>
-        </p>
-      </div>
+          <li class="navLink">
+            <a href="#sectionContacto">
+              <button class="navButton" id="contacto">
+                <span> CONTACTO</span>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <div class="imgContainerSobreNosotros">
-        <!--  <img src="https://img.freepik.com/vector-gratis/empleados-reunidos-cocina-oficina-tomando-cafe_74855-5237.jpg?w=1380&t=st=1679015951~exp=1679016551~hmac=26a5a2371346250d0d1948a71c6ddecb7cd78941ea8c8019abb711ba605689de" alt="" class="" width="900px" height="600px">        
-         -->
-      </div>
-    </section>
-
-    <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-
-    <!-- AGREGO SPLIDE DE COMPAÑIAS -->
-    <section id="sectionCompanias" class="sectionCompanias">
-      <div class="divTitleCompanias">
-        <h2 >SOMOS PRODUCTORES DE</h2>
-      </div>
-      <div class="splide_companias">
-        
-
-        <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-          <div class="splide__track">
-            <ul class="splide__list  ">
-              <li class="splide__slide liSplideCompanias">
-                <a href="https://swissmedicalseguros.com/" target="_blank">
-                  <img
-                    src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091612/imgPageSanmi/sectionCompanias/dpdx4aksx3vqpa0it7m2.png"
-                    alt="logo SMG" class="logoSMG" />
-                </a>
-              </li>
-
-              <li class="splide__slide">
-                <a href="https://www.segurosrivadavia.com/personas/" target="_blank">
-                  <!-- src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091587/imgPageSanmi/sectionCompanias/kybbph1g1bgkuucof8mm.png" -->
-                  <img
-                  src="img/rivLogo.png"
-                    alt="Logo Rivadavia" class="logoRivadavia" />
-                </a>
-              </li>
-
-              <li class="splide__slide">
-                <a href="https://www.boston.com.ar/" target="_blank">
-                  <!--src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091586/imgPageSanmi/sectionCompanias/r7txaapthvlp3rywad1q.png" -->
-                  <img src="img/logoBoston.png"
-                  alt="Logo Boston" class="logoBoston" />
-                </a>
-              </li>
-
-              <li class="splide__slide">
-                <a href="https://www.experta.com.ar/" target="_blank">
-                  <!--   src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091587/imgPageSanmi/sectionCompanias/hjooedjnghrr3n8lrjob.png" -->
-                  <img src="img/logoExperta.png"
-                    alt="Logo Experta" class="logoExperta" />
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="https://www.mapfre.com.ar/" target="_blank">
-                  <img
-                    src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091612/imgPageSanmi/sectionCompanias/dxxchoesmiupb9vz07mt.png"
-                    alt="Logo Mapfre" class="logoMapfre" />
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="https://www.lps.com.ar/" target="_blank">
-                  <img
-                    src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091612/imgPageSanmi/sectionCompanias/gfdbwauczmpd3blakyx5.png"
-                    alt="Logo LPS" class="logoLPS" />
-                </a>
-              </li>
-            </ul>
+    <main class="main">
+      <section
+        class="sectionInicio animate__animated animate__fadeInLeft"
+        id="sectionInicio"
+      >
+        <!-- Imagen de la mitad de la pagina del lado izquierdo -->
+        <div class="imgLogo">
+          <div class="imgContainer">
+            <img
+              src="img/editconjunto.png"
+              alt="Logo San Miguel"
+              class="logo"
+            />
           </div>
-        </section>
-      </div>
-    </section>
+        </div>
 
+        <!-- Frase para dar info al negocio -->
+        <div class="fraseInicio">
+          <p class="">
+            Protegemos lo que tanto te costo tener, porque tu tranquilidad es
+            nuestra prioridad constante.
+          </p>
+        </div>
+      </section>
 
-    <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
-    <section class="sectionContacto" id="sectionContacto">
-      <div>
-        <h1>Contáctanos</h1>
-      </div>
-      <div class="contactUs">
-      <div id="whatsapp" class="whatsapp">
-        <a href="https://wa.me/543775494791?text=Quisiera solicitar una cotización">
-          <img
-            src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091646/imgPageSanmi/sectionContacto/dyqip2cnkqovno1thsby.png"
-            alt="WhatsApp" />
-        </a>
-      </div>
+      <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
+      <section
+        class="sectionSobreNosotros"
+        id="sectionSobreNosotros"
+      
+      >
+        <div class="divSobreNosotros"   data-aos="fade-down"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="1500">
+          <h2 class="titleSobreNosotros">SOBRE NOSOTROS</h2>
+          <p class="fraseSobreNosotros">
+            En nuestra Asesoría encontrarás la satisfacción de que cómo clientes
+            sos la prioridad. Es por eso que te ofrecemos servicios de excelente
+            calidad, conocimiento en lo que adquieras y amabilidad en su Staff
+            de Asesores, altamente capacitados y titulados, que te acompañarán
+            en todo momento a elegir el producto más adecuado según tus
+            necesidades y/o metas a alcanzar, teniendo en cuenta, tu estilo,
+            profesión, y tus bienes <span> que tanto te costo tener.</span>
+          </p>
+        </div>
 
-      <div class="email">
+        <div class="containerBeneficios">
+          <!-- <div class="divBeneficios"> -->
+          <div class="beneficios" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <p>AUTOMOTORES</p>
+          </div>
+          <div class="beneficios" data-aos="fade-down"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <p>COMBINADO FAMILIAR</p>
+          </div>
+          <div class="beneficios" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <p>ACCIDENTES PERSONALES</p>
+          </div>
+          <div class="beneficios" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <p>MOTOS</p>
+          </div>
+          <div class="beneficios" data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <p>VIDA</p>
+          </div>
+          <div class="beneficios" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <p>INTEGRAL DE COMERCIO</p>
+          </div>
+
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
+
+      <!-- AGREGO SPLIDE DE COMPAÑIAS -->
+      <section
+        id="sectionCompanias"
+        class="sectionCompanias"
+        
+      >
+        <div class="divTitleCompanias" data-aos="fade-down"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="1500">
+          <h2>SOMOS PRODUCTORES DE</h2>
+        </div>
+        <div class="splide_companias"    data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="1500"> 
+          <section
+            id="image-carousel"
+            class="splide"
+            aria-label="Beautiful Images"
+         
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide liSplideCompanias">
+                  <a href="https://swissmedicalseguros.com/" target="_blank">
+                    <img
+                      src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091612/imgPageSanmi/sectionCompanias/dpdx4aksx3vqpa0it7m2.png"
+                      alt="logo SMG"
+                      class="logoSMG"
+                    />
+                  </a>
+                </li>
+
+                <li class="splide__slide">
+                  <a
+                    href="https://www.segurosrivadavia.com/personas/"
+                    target="_blank"
+                  >
+                    <!-- src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091587/imgPageSanmi/sectionCompanias/kybbph1g1bgkuucof8mm.png" -->
+                    <img
+                      src="img/rivLogo.png"
+                      alt="Logo Rivadavia"
+                      class="logoRivadavia"
+                    />
+                  </a>
+                </li>
+
+                <li class="splide__slide">
+                  <a href="https://www.boston.com.ar/" target="_blank">
+                    <!--src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091586/imgPageSanmi/sectionCompanias/r7txaapthvlp3rywad1q.png" -->
+                    <img
+                      src="img/logoBoston.png"
+                      alt="Logo Boston"
+                      class="logoBoston"
+                    />
+                  </a>
+                </li>
+
+                <li class="splide__slide">
+                  <a href="https://www.experta.com.ar/" target="_blank">
+                    <!--   src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091587/imgPageSanmi/sectionCompanias/hjooedjnghrr3n8lrjob.png" -->
+                    <img
+                      src="img/logoExperta.png"
+                      alt="Logo Experta"
+                      class="logoExperta"
+                    />
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="https://www.mapfre.com.ar/" target="_blank">
+                    <img
+                      src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091612/imgPageSanmi/sectionCompanias/dxxchoesmiupb9vz07mt.png"
+                      alt="Logo Mapfre"
+                      class="logoMapfre"
+                    />
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="https://www.lps.com.ar/" target="_blank">
+                    <img
+                      src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091612/imgPageSanmi/sectionCompanias/gfdbwauczmpd3blakyx5.png"
+                      alt="Logo LPS"
+                      class="logoLPS"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Div con el ID para que la etiqueta <a> envie directamente a este sector -->
+      <section class="sectionContacto" id="sectionContacto">
+        <div data-aos="fade-down"
        
-        <img
-          src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091646/imgPageSanmi/sectionContacto/li9si3mjnitryjpnllgb.png"
-          alt="gmail" />
-          <span>sanmiguel2909@gmail.com</span>
-      </div>
+        data-aos-duration="1500" >
+          <h1>CONTÁCTANOS</h1>
+        </div>
+        <div class="contactUs" data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+          <div id="whatsapp" class="whatsapp"  >
+            <a
+              href="https://wa.me/543775494791?text=Quisiera solicitar una cotización"
+            >
+              <img
+                src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091646/imgPageSanmi/sectionContacto/dyqip2cnkqovno1thsby.png"
+                alt="WhatsApp"
+              />
+            </a>
+          </div>
 
-      <div class="direccion">
-        <a href="https://goo.gl/maps/QSGZ2gYZaspdFqWd9">
-          <img
-            src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679175204/imgPageSanmi/sectionContacto/bnfxtibkl7pykqx9i1ut.png"
-            alt="Dirección" />
-        </a>
-      </div>
-    </div>
-    </section>
+          <div class="email" >
+            <img
+              src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091646/imgPageSanmi/sectionContacto/li9si3mjnitryjpnllgb.png"
+              alt="gmail"
+            />
+            <span>sanmiguel2909@gmail.com</span>
+          </div>
 
+          <div class="direccion" >
+            <a href="https://goo.gl/maps/QSGZ2gYZaspdFqWd9">
+              <img
+                src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679175204/imgPageSanmi/sectionContacto/bnfxtibkl7pykqx9i1ut.png"
+                alt="Dirección"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <script src="./js/index.js"></script>
-  <script src="./js/sliders.js"></script>
-</body>
-
+    <footer>
+      <p> San Miguel &copy 2023 </p>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/sliders.js"></script>
+  </body>
 </html>
