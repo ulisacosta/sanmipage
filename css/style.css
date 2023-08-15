@@ -298,7 +298,17 @@ nav { position: fixed;
 
 }
 
-
+footer{
+    border-top: 1px solid;
+    height: 30px
+}
+footer p{
+    height: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 1159px) {
@@ -306,17 +316,21 @@ nav { position: fixed;
         width: 100vw;
     }
 
-    .sectionInicio,
+     .sectionInicio,
     .sectionSobreNosotros,
     .sectionCompanias,
-    .sectionContacto {
-        
+    .sectionContacto,
+    .contactUs {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
+
+    .sectionContacto{
+height: auto;
+    }
+    
 
     .whatsapp,
     .email,
@@ -327,4 +341,8 @@ nav { position: fixed;
     }
 
    
+}
+
+@media screen and (max-width: 1007px) {
+    
 }
