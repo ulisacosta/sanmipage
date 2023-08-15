@@ -79,7 +79,7 @@ nav { position: fixed;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
    
-    background-color: #1e293b;
+   /*  background-color: #1e293b; */
 
 }
 
@@ -209,11 +209,25 @@ nav { position: fixed;
 }
 
 .beneficios{ 
+    display: flex;
     width: 250px;
-    height: 300px;
+    height: 250px;
     border: 1px solid;
-    border-radius: 25px
+    border-radius: 25px;
+    background-color: #fff;
+    color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.tituloBeneficios{
+    height: 100%;
+    display: flex;
+    justify-content: top;
+}
+
+
 
 .sectionContacto {
     height: 500px;
@@ -308,6 +322,7 @@ footer p{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-weight: bolder;
 }
 
 
