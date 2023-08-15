@@ -25,6 +25,45 @@ window.addEventListener('focus',()=>{
     document.title = previousTitle
 })
 
+function ajustarDireccionAnimacion() {
+    let beneficiosElements = document.querySelectorAll('.beneficios');
+    let splide_companias = document.querySelector('.splide_companias');
+
+    if (window.matchMedia("(max-width: 1007px)").matches) {
+      beneficiosElements.forEach(function(element) {
+        element.setAttribute('data-aos', 'fade-up');
+        element.setAttribute('data-aos-easing', 'ease-in-sine');
+      });
+      splide_companias.setAttribute('data-aos', 'fade-up');
+      splide_companias.setAttribute('data-aos-easing', 'ease-in-sine');
+    } else {
+        splide_companias.setAttribute('data-aos', 'fade-left');
+        
+
+        beneficiosElements.forEach(function(element) {
+        let fadeDirections = ['fade-right', 'fade-down', 'fade-left', 'fade-right', 'fade-up', 'fade-left'];
+        let fadeEasings = ['ease-in-sine', 'ease-in-sine', 'ease-in-sine', 'ease-in-sine', 'ease-in-sine', 'ease-in-sine'];
+
+        element.setAttribute('data-aos', fadeDirections[index]);
+        element.setAttribute('data-aos-easing', fadeEasings[index]);
+      });
+    }
+
+    if (typeof AOS !== 'undefined') {
+      AOS.refresh(); // Refrescar AOS para aplicar los cambios
+    } else {
+      AOS.init(); // Inicializar AOS si aún no se ha hecho
+    }
+  }
+
+  // Ejecutar la función al cargar la página y en cada cambio de tamaño de pantalla
+  window.addEventListener('DOMContentLoaded', () => {
+    ajustarDireccionAnimacion();
+  });
+  window.addEventListener('resize', ajustarDireccionAnimacion);
+
+
+
 /* AL HACER CLICK EN EL BOTON INICIO DEL NAVBAR AGREGA LAS ANIMACIONES */
 inicio.addEventListener('click',()=>{
     sectionInicio.classList.add('animate__animated');
@@ -54,7 +93,7 @@ sectionContacto.addEventListener('animationend',()=>{
 })
  
 
-companias.addEventListener('click',()=>{
+/* companias.addEventListener('click',()=>{
   imgCompanias.classList.add('animate__animated');
   imgCompanias.classList.add('animate__backInLeft');  
 })
@@ -62,5 +101,5 @@ companias.addEventListener('click',()=>{
 imgCompanias.addEventListener('animationend',()=>{
     imgCompanias.classList.remove('animate__animated');
     imgCompanias.classList.remove('animate__backInLeft');
-})
+}) */
  
