@@ -28,14 +28,17 @@ window.addEventListener('focus',()=>{
 function ajustarDireccionAnimacion() {
     let beneficiosElements = document.querySelectorAll('.beneficios');
     let splide_companias = document.querySelector('.splide_companias');
+    let divTitleCompanias = document.querySelector('.divTitleCompanias');
 
     if (window.matchMedia("(max-width: 1007px)").matches) {
       beneficiosElements.forEach(function(element) {
         element.setAttribute('data-aos', 'fade-up');
         element.setAttribute('data-aos-easing', 'ease-in-sine');
       });
-      splide_companias.setAttribute('data-aos', 'fade-up');
-      splide_companias.setAttribute('data-aos-easing', 'ease-in-sine');
+      splide_companias.setAttribute('data-aos', 'fade-right');
+    
+      divTitleCompanias.setAttribute('data-aos', 'fade-right');
+      
     } else {
         splide_companias.setAttribute('data-aos', 'fade-left');
         

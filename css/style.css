@@ -369,9 +369,9 @@ margin-bottom: 50px;
     body{
 width: 100vw;
     }
-    nav {
+
+    .ulNav{
         display: none;
-        width: auto;
     }
     .logo{
         width: 350px;
