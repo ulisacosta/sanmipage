@@ -45,15 +45,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
   <body>
     <header id="header">
       <nav>
-        <a href="#sectionInicio" id="imgInicio" class="linkImgLogo">
-          <img
-            src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091555/imgPageSanmi/logo/xrisy66t1m1ld10tpj3e.png"
-            alt="logo"
-            width="70px"
-            height="60px"
-            class="navImg"
-          />
-        </a>
+      
+
         <ul class="ulNav">
           <li class="navLink">
             <a href="#sectionInicio" id="inicio">
@@ -70,7 +63,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
               </button>
             </a>
           </li>
-
+          <li>
+      <!--     <div class="divImgNav"> -->
+          <!--   <a href="#sectionInicio" id="imgInicio" class="linkImgLogo"> -->
+              <img
+                src="https://res.cloudinary.com/dphsynf6f/image/upload/v1679091555/imgPageSanmi/logo/xrisy66t1m1ld10tpj3e.png"
+                alt="logo"
+                width="70px"
+                height="60px"
+                class="navImg"
+              />
+          <!--   </a> -->
+          <!-- 
+          </div> -->
+        </li>
           <li class="navLink">
             <a href="#sectionCompanias">
               <button class="navButton" id="companias">
@@ -87,19 +93,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
             </a>
           </li>
         </ul>
+        <div></div>
       </nav>
     </header>
 
     <main class="main">
       <section
-        class="sectionInicio animate__animated animate__fadeInLeft"
+        class="sectionInicio "
         id="sectionInicio"
       >
         <!-- Imagen de la mitad de la pagina del lado izquierdo -->
-        <div class="imgLogo">
+        <div class="imgLogo animate__animated animate__fadeInLeft">
           <div class="imgContainer">
             <img
-              src="img/editconjunto.png"
+              src="img/logoSinFOndo.png"
               alt="Logo San Miguel"
               class="logo"
             />
@@ -107,7 +114,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
         </div>
 
         <!-- Frase para dar info al negocio -->
-        <div class="fraseInicio">
+        <div class="fraseInicio animate__animated animate__fadeInRight">
           <p class="">
             Protegemos lo que tanto te costo tener, porque tu tranquilidad es
             nuestra prioridad constante.
@@ -121,7 +128,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
         id="sectionSobreNosotros"
       
       >
-        <div class="divSobreNosotros"   data-aos="fade-down"
+        <div class="divSobreNosotros"   data-aos="zoom-in-right"
         data-aos-anchor-placement="top-center"
         data-aos-duration="1500">
           <h2 class="titleSobreNosotros">SOBRE NOSOTROS</h2>
@@ -212,7 +219,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
         
       >
       <!-- data-aos-anchor-placement="top-center" -->
-        <div class="divTitleCompanias" data-aos="fade-down"
+        <div class="divTitleCompanias" data-aos="zoom-in-right"
         data-aos-duration="1500">
           <h2>SOMOS PRODUCTORES DE</h2>
         </div>
