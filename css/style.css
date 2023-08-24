@@ -6,21 +6,23 @@
 /* DEFINIMOS VARIABLES */
 :root {
     --varHeightNav: 60px;
-    --varColorNav: #01a6b7;
+    --varColorNav: #5483B3;
     --varFont: 'Roboto', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
+    
+   
 }
 
 body {
-  
+    
     margin: 0;
     padding: 0;
-    background-color: #f6f6f6;
-    color: #000;
+    background-color: #052659;
+    color: #C1E8FF;
     font-family: var(--varFont);
 }
 
@@ -28,7 +30,6 @@ header{
     position: fixed;
     z-index: 1000;
     display: flex;
-
 }
 
 nav { 
@@ -40,8 +41,8 @@ nav {
     display: flex;
     /* justify-content:space-between; */
     justify-content: center;
-    
-    border-bottom: 2px solid;
+  
+ /*    border-bottom: 2px solid; */
 }
 
 
@@ -62,7 +63,7 @@ nav {
 .navButton {
     background-color: var(--varColorNav);
     height: var(--varHeightNav);
-    color: #fff;
+    color: #FFF;
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -72,20 +73,10 @@ nav {
 
 .navButton:hover {
     transition: background-color 0.5s;
-    background-color: #003049;
-    color: wheat;
-    
+    background-color: #052659;
+    color: #FFF;
+    cursor: pointer;
 }
-
-
-
-.navImg {
-    width: 70px;
-    height: var(--varHeightNav);
-    justify-self: start;
-}
-
-
 
 
 .navLink span {
@@ -106,6 +97,7 @@ nav {
 .sectionInicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow-x: hidden;
 }
 
 .imgLogo,
@@ -309,9 +301,12 @@ footer p{
 
 @media screen and (max-width: 1159px) {
     nav {
+   
         width: 100vw;
     }
-
+    .navButton{
+        display: none;
+    }
      .sectionInicio,
     .sectionSobreNosotros,
     .sectionCompanias,
@@ -348,10 +343,27 @@ margin-bottom: 50px;
     body{
 width: 100vw;
     }
-
-    .ulNav{
+    
+/*     .nav{
+        display: flex;
+    }
+    .navImg{
         display: none;
     }
+    .navLink span {
+        font-size: 10px;
+    }
+    .navButton {
+        background-color: var(--varColorNav);
+        height: var(--varHeightNav);
+        color: #fff;
+        width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+        
+    } */
+
     .logo{
         width: 350px;
         height: 350;
