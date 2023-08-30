@@ -41,7 +41,9 @@ margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
 
